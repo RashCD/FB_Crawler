@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 8 * * *"
+    },
+    {
+      "type": "queue",
+      "name": "myQueueItem",
+      "queueName": "fb-que",
+      "connection": "gorgiasfb9a33_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
